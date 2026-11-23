@@ -18,3 +18,4 @@ Thumbs.db
 *.egg-info/
 build/
 dist/
+script.sh
