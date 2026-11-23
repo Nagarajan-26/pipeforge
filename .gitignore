@@ -13,3 +13,8 @@ reports/*
 !reports/.gitkeep
 .DS_Store
 Thumbs.db
+
+# Python packaging artifacts
+*.egg-info/
+build/
+dist/
