@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: pipeforge
+Version: 0.1.0
+Summary: Visual benchmark factory for enterprise data-pipeline incident reasoning.
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+Requires-Dist: networkx>=3.7
+Requires-Dist: matplotlib>=3.10
+Requires-Dist: pandas>=2.3
+Requires-Dist: pydantic>=2.10
+Requires-Dist: Pillow>=11.0
+Requires-Dist: streamlit>=1.50
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: jsonschema>=4.23
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: pytest-cov>=6.0; extra == "dev"
+Requires-Dist: ruff>=0.11; extra == "dev"
+
+# PipeForge
+
+**Product:** PipeSight Ops
+
+**Tagline:** We don't just test what AI sees. We test how AI reasons.
+
+PipeForge is a reproducible visual benchmark factory for evaluating
+multimodal AI reasoning over enterprise data-pipeline incidents.
+
+## Core capabilities
+
+- Deterministic incident scenario generation
+- Visual pipeline incident boards
+- Question and ground-truth generation
+- Independent task validation
+- Causal, evidence-removal and distractor twins
+- Multimodal model evaluation and reporting
+
+## Development setup
+
+Requires Python 3.14+.
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate
+python -m pip install --upgrade pip
+pip install -e ".[dev]"
+```
+
+## Run tests
+
+```bash
+pytest -v
+```
+
+## Launch the prototype
+
+```bash
+streamlit run app/streamlit_app.py
+```
